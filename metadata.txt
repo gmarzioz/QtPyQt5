@@ -1,0 +1,12 @@
+[general]
+name: Insert your text here
+qgisMinimumVersion:3.0
+description: Insert text here
+version:0.1
+author:Giuseppe Marzio Zermo
+email:gmarzioz@gmail.com
+
+about: Insert text
+
+tracker:http://bugs
+repository:http://repo
