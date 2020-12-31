@@ -2,17 +2,16 @@
 import sys
 import os
 
-
 from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5.QtCore import QFile
 #from PyQt5.QtUiTools import QUiLoader
-from PyQt5 import uic loadUi
+from PyQt5 import uic #loadUi
 
 class test(QWidget):
     def __init__(self):
         super(test, self).__init__()
-        self.load_ui()
-        self.hello()
+        #self.load_ui()
+        self.atStart()
 
     def load_ui(self):
         #loader = QUiLoader()
@@ -24,12 +23,17 @@ class test(QWidget):
         ui_file.close()
 
     def hello(self):
-        print("Window start")
+        print("Definition Hello")
+
+    def atStart(self):
+        print("At start: Called")
 
 if __name__ == "__main__":
+    #print("At first if: called")
     app = QApplication([])
     widget = test()
-    widget.show()
-    print("Hello world")
+    #widget.show()
+    widget.hello()
+    #widget.atStart()
     sys.exit(app.exec_())
 
